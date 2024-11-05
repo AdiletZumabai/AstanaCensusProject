@@ -1,0 +1,997 @@
+/* CSS File: style.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Banner Section */
+  .banner {
+    background: url('astana skyline.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+  
+  .banner-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .banner h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .banner p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+/* Main Header Styling */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background-color: #f8f9fa;
+}
+
+/* Centered Logo Styling */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  flex: 1; /* This makes the logo container expand, centering the logo */
+}
+
+.logo {
+  height: 100px; /* Adjust the size as needed */
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+
+
+  /* Introduction Section */
+  .introduction {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f4f4f4;
+  }
+  
+  .intro-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .icon-container {
+    margin: 0 1rem;
+    text-align: center;
+  }
+  
+  .icon-container img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .intro-text {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  /* Why Participate Section */
+  .why-participate {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .why-participate h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .why-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .why-icons .icon-container {
+    margin: 0 1rem;
+    text-align: center;
+  }
+  
+  .why-icons img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* About Us Page Styling */
+
+/* About Banner Section */
+.about-banner {
+    background: url('lovepik-blue-banner-background-image_500452484.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+  }
+  
+  .about-banner-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .about-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-banner p {
+    font-size: 1.2rem;
+  }
+  
+  /* Section Styling */
+  section {
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Company Profile */
+  .company-profile {
+    background-color: #f4f4f4;
+  }
+  
+  .company-profile h2 {
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Mission Section */
+  .mission {
+    background-color: #fff;
+  }
+  
+  .mission h2 {
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Team Section */
+  .team {
+    background-color: #f4f4f4;
+  }
+  
+  .team h2 {
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .team-member {
+    width: 200px;
+    margin: 1rem;
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .team-member h3 {
+    color: #007bff;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Back Button */
+  .back {
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Project Overview Page Styling */
+
+/* Project Banner */
+.project-banner {
+    background: url('lovepik-blue-banner-background-image_500452484.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+  }
+  
+  .project-banner-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .project-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-banner p {
+    font-size: 1.2rem;
+  }
+  
+  /* Project Scope Section */
+  .project-scope, .timeline, .stakeholders {
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Timeline Styling */
+.timeline {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.timeline h2 {
+  color: #007bff;
+  margin-bottom: 2rem;
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.timeline-item {
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.timeline-item:hover {
+  transform: scale(1.02);
+}
+
+  
+/* Stakeholders Section */
+.stakeholders {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.stakeholders h2 {
+  color: #007bff;
+  margin-bottom: 2rem;
+}
+
+.stakeholder-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.stakeholder-logos img {
+  width: 80px;
+  height: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.stakeholder-logos img:hover {
+  opacity: 1;
+}
+
+  /* How We Work Page Styling */
+
+/* Work Banner Section */
+.work-banner {
+    background: url('lovepik-blue-banner-background-image_500452484.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+  }
+  
+  .work-banner-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .work-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .work-banner p {
+    font-size: 1.2rem;
+  }
+  
+ /* Data Collection Process Styling */
+.process-steps {
+  list-style: none;
+  padding: 0;
+}
+
+.process-steps li {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.process-steps img {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+}
+
+  /* Section Headings */
+.data-collection h2, .security h2, .risk-management h2 {
+  color: #007bff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Process Steps List */
+.security-measures, .risk-strategies {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.security-measures li, .risk-strategies li {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+/* Security Cards */
+.security-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card h3 {
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+/* Accordion Styling */
+.accordion-item {
+  margin: 1rem 0;
+}
+
+.accordion-button {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.accordion-content {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  display: none;
+  border-top: 1px solid #007bff;
+}
+
+  /* Navigation Footer */
+  .navigation {
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .navigation .btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .navigation .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Interviewers’ Profile Page Styling */
+
+/* Profile Banner Section */
+.profile-banner {
+    background: url('lovepik-blue-banner-background-image_500452484.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+  }
+  
+  .profile-banner-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .profile-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .profile-banner p {
+    font-size: 1.2rem;
+  }
+  
+  /* Role Requirements Section */
+  .role-requirements, .recruitment-training, .reward-system {
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Section Headings */
+  .role-requirements h2, .recruitment-training h2, .reward-system h2 {
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Requirement Details */
+  .requirement-details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+  
+  .requirement-item {
+    text-align: center;
+    max-width: 250px;
+  }
+  
+  .requirement-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .requirement-item h3 {
+    color: #007bff;
+    font-size: 1.2rem;
+  }
+  
+/* Recruitment & Training Timeline */
+.training-timeline {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.training-step {
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  width: 220px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.training-step h3 {
+  font-size: 1.1rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.training-step:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #007bff;
+  top: 50%;
+  left: -2rem;
+  z-index: -1;
+}
+
+.training-step:first-child:before {
+  display: none; /* Remove line from first step */
+}
+
+  
+/* Reward System Grid Layout */
+.reward-system {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.reward-system h2 {
+  color: #007bff;
+  margin-bottom: 2rem;
+}
+
+.reward-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.reward-card {
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.reward-badge {
+  font-size: 2rem;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.reward-card h3 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.reward-card p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+  
+  /* Navigation Footer */
+  .navigation {
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .navigation .btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .navigation .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Budget Overview Page Styling */
+
+/* Budget Banner Section */
+.budget-banner {
+    background: url('lovepik-blue-banner-background-image_500452484.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+  }
+  
+  .budget-banner-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .budget-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .budget-banner p {
+    font-size: 1.2rem;
+  }
+  
+  /* Budget Breakdown Section */
+  .budget-breakdown {
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Section Headings */
+  .budget-breakdown h2 {
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Budget Items */
+  .budget-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .budget-item {
+    width: 300px;
+    background-color: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .budget-item h3 {
+    color: #007bff;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .budget-item p {
+    font-size: 1.1rem;
+  }
+  
+  /* Navigation Footer */
+  .navigation {
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .navigation .btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .navigation .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Contact Us Page Styling */
+
+/* Contact Banner */
+.contact-banner {
+    background: url('lovepik-blue-banner-background-image_500452484.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+  }
+  
+  .contact-banner-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .contact-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-banner p {
+    font-size: 1.2rem;
+  }
+  
+  
+  /* Contact Details Section */
+  .contact-details, .contact-form, .social-media {
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .contact-details h2, .contact-form h2, .social-media h2 {
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+/* Contact Form Styling */
+.contact-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+
+  
+  /* Map Section */
+.map-section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.map-container iframe {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+  /* Social Media Section */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .social-icons a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+  }
+  
+  .social-icons a img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Contact Info Cards */
+.info-cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  width: 200px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+  /* Navigation Footer */
+  .navigation {
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .navigation .btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .navigation .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+
+/* Team Section Styling */
+.team-section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.team-section h2 {
+  color: #007bff;
+  margin-bottom: 2rem;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.team-member {
+  width: 220px;
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.team-member h3 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.team-member p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+/* Accordion */
+.accordion-item {
+  margin: 1rem 0;
+}
+
+.accordion-button {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.accordion-content {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  display: none;
+  border-top: 1px solid #007bff;
+}

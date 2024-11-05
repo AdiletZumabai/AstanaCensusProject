@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Astana Census 2024</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="contact-banner">
+    <div class="contact-banner-overlay">
+      <h1>Contact Us</h1>
+      <p>Reach Out for Inquiries or Employment Opportunities</p>
+    </div>
+  </header>
+
+  <!-- Contact Details Section -->
+  <section class="contact-details">
+    <div class="content-wrapper">
+      <h2>Our Location</h2>
+      <p><strong>Astana, Kazakhstan</strong></p>
+      <p>For inquiries about the Astana Census 2024 or employment opportunities, feel free to get in touch using the contact form or social media links below.</p>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <div class="content-wrapper">
+      <h2>Find Us Here</h2>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.96342285265!2d71.41559597523921!3d51.09068254106216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424585a605525605%3A0x4dff4a1973f7567e!2sAstana%20IT%20University!5e0!3m2!1sru!2skz!4v1730662209359!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Form Section -->
+  <section class="contact-form">
+    <div class="content-wrapper">
+      <h2>Get in Touch</h2>
+      <div id="form-container">
+        <!-- Contact Form -->
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Submit</button>
+        </form>
+      </div>
+      <!-- Success Message and Resend Button -->
+      <div id="success-message" style="display: none;">
+        <p>Thank you! Your message has been sent successfully.</p>
+        <button onclick="showForm()" class="btn-primary">Send Another Message</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Media Section -->
+  <section class="social-media">
+    <div class="content-wrapper">
+      <h2>Follow Us on Social Media</h2>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://linkedin.com" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+        <a href="https://instagram.com" target="_blank"><img src="instagram (1).png" alt="Instagram"></a>
+      </div>
+    </div>
+  </section>
+  <section class="contact-info">
+    <div class="content-wrapper">
+      <h2>Contact Information</h2>
+      <div class="info-cards">
+        <div class="card">
+          <h3>Phone</h3>
+          <p>+7 (7171) 456-7890</p>
+        </div>
+        <div class="card">
+          <h3>Email</h3>
+          <p>CencusTech2019@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Navigation Footer -->
+  <footer class="navigation">
+    <a href="index.html" class="btn-primary">Home</a>
+    <a href="about.html" class="btn-primary">About Us</a>
+    <a href="project-overview.html" class="btn-primary">Project Overview</a>
+    <a href="how-we-work.html" class="btn-primary">How We Work</a>
+    <a href="interviewers-profile.html" class="btn-primary">Interviewers' Profile</a>
+    <a href="budget-overview.html" class="btn-primary">Budget Overview</a>
+  </footer>
+
+  
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    // Initialize EmailJS with your User ID
+    emailjs.init("o0vKxMhBkGZdYYDCd"); // Replace with your EmailJS User ID
+
+    // Handle form submission
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Send form data using EmailJS
+      emailjs.sendForm('service_a2b6tbo', 'template_wnoufvq', this)
+        .then(function() {
+          // Hide form and show success message
+          document.getElementById('form-container').style.display = 'none';
+          document.getElementById('success-message').style.display = 'block';
+        }, function(error) {
+          alert('Failed to send message. Please try again later.');
+          console.log(error);
+        });
+    });
+
+    // Show form again when clicking "Send Another Message"
+    function showForm() {
+      document.getElementById('form-container').style.display = 'block';
+      document.getElementById('success-message').style.display = 'none';
+      document.getElementById('contactForm').reset(); // Reset form fields
+    }
+  </script>
+
+</body>
+</html>
